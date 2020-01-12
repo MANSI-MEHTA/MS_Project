@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#remedies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#remedies">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#remedies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#remedies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Remedy"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#symptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#symptom">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Symptoms"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Remedy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Remedy">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#remedies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Symptom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Symptom">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Remedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Remedy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Symptoms"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Bacterial_Spots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Bacterial_Spots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Bacterial_Spots"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Bacterial_Spots"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/bacterial-spots</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/bacterial-spots</Symptom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Early_Blight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Early_Blight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Early_Blight"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Early_Blight"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/early-blight</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/early-blight</Symptom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Late_Blight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Late_Blight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Late_Blight"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Late_Blight"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/late-blight-treatments</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/late-blight-treatments</Symptom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Leaf_Mold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Leaf_Mold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Leaf_Mold"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Leaf_Mold"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/leaf-mold</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/leaf-mold</Symptom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Mosaic_Virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Mosaic_Virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Mosaic_Virus"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Mosaic_Virus"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/mosaic-virus</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tomatodiseasehelp.com/mosaic-virus</Symptom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Septoria_Leaf_Spot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Septoria_Leaf_Spot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Septoria_Leaf_Spot"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Septoria_Leaf_Spot"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://hortnews.extension.iastate.edu/septoria-leaf-spot</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://hortnews.extension.iastate.edu/septoria-leaf-spot</Symptom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Spider_Mites -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Spider_Mites">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Spider_Mites"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Spider_Mites"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://homeguides.sfgate.com/avoid-spider-mites-tomato-garden-73368.html</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://homeguides.sfgate.com/avoid-spider-mites-tomato-garden-73368.html</Symptom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Target_Spot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Target_Spot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Target_Spot"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Target_Spot"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.gardeningknowhow.com/edible/vegetables/tomato/target-spot-on-tomatoes.htm</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.gardeningknowhow.com/edible/vegetables/tomato/target-spot-on-tomatoes.htm</Symptom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#YellowLeaf_Curl_Virus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#YellowLeaf_Curl_Virus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#Disease_name"/>
+        <remedies rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#YellowLeaf_Curl_Virus"/>
+        <symptom rdf:resource="http://www.semanticweb.org/nitish/ontologies/2019/11/untitled-ontology-6#YellowLeaf_Curl_Virus"/>
+        <Remedy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www2.ipm.ucanr.edu/agriculture/tomato/tomato-yellow-leaf-curl/</Remedy>
+        <Symptom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www2.ipm.ucanr.edu/agriculture/tomato/tomato-yellow-leaf-curl/</Symptom>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
